@@ -1,0 +1,63 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+
+  <header>
+    <div class="w50">
+      <a href=""><h2>Surrealist Inner Society</h2></a>
+    </div>
+    <div class="w50">
+      <div class="menu">
+        <a href="">Home</a>
+        <a href="">Sobre</a>
+        <a href="">Contato</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner">
+    <img src="olho-gif.gif">
+    <button>>Enjoy<</button>
+  </section>
+
+ <!-- 
+  <section class="diferenciais">
+    <div class="w33">
+      <h2>Texto de exemplo</h2>
+      <p>Conteúdo de exemplo</p>
+    </div>
+    <div class="w33">
+      <h2>Texto de exemplo</h2>
+      <p>Conteúdo de exemplo</p>
+    </div>
+    <div class="w33">
+      <h2>Texto de exemplo</h2>
+      <p>Conteúdo de exemplo</p>
+    </div>
+  </section>
+-->
+
+  <footer>
+    <p>© 2023 - Surrealist Inner Society, All rights reserved</p>
+  </footer>
+
+  <script>
+    if(window.ethereum){
+        document.querySelector('button').addEventListener('click',async ()=>{
+            try{
+            const accounts = await ethereum.request({method:'eth_requestAccounts'});
+            account = accounts[0];
+            document.querySelector('span').innerHTML=account;
+     }catch(e){}
+     })
+    }else{
+        alert("Não pode interagir com nosso Zé");
+    }
+</script>
+  
+    
+  </body>
+</html>
