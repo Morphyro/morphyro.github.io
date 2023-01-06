@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .w50 {
+    width: 100%;
+    padding: 0 10px;
+    text-align: center;
+  }
+  
+  .menu {
+    text-align: center;
+  }
+  
+  section.donation {
+    width: 100%;
+    min-height: 500px;
+    text-align: center;
+    padding: 100px 0;
+    color: black;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  label,
+  input {
+    margin: 10px 0;
+  }
+  
+  button {
+    width: 100px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    border: 0;
+    color: black;
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: rgb(50, 3, 71);
+    background-color: black;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    header {
+      text-align: center;
+    }
+}

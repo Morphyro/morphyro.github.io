@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  
+  
+  header{
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .w50{
+    width:100%;
+    padding:0 10px;
+    text-align: center;
+  }
+  
+  .menu{text-align: center;}
+  
+  section.projects{
+    width:100%;
+    min-height: 500px;
+    text-align: center;
+    padding:100px 0;
+    color:black;
+    }
+  
+  .project{
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  footer{
+    position: absolute;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    color: rgb(50, 3, 71);
+    background-color:black;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .project{
+      width: 90%;
+    }
+  }
+  
+  @media screen and (max-width: 768px){
+    header{
+        text-align: center;
+    }
+    .menu{
+        text-align: center;
+    }
+    .project{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+  }
