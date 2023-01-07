@@ -1,40 +1,148 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Surrealist Inner Society - Donation</title>
-
+<head>
+    <title>Donation Contract</title>
     <link href="style.css" rel="stylesheet" />
-  </head>
-  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+</head>
+<body>
     <header>
-      <div class="w50">
-        <a href="../index.html"><h2>Surrealist Inner Society</h2></a>
+    <div class="w50">
+      <a href="../index.html"><h2>Surrealist Inner Society</h2></a>
+    </div>
+    <div class="w50">
+      <div class="menu">
+        <a href="../projects/projects.html">Projects</a>
+        <a href="../about/about.html">About</a>
+        <a href="donation.html">Donation</a>
+
       </div>
-      <div class="w50">
-        <div class="menu">
-            <a href="../projects/projects.html">Projects</a>
-            <a href="../about/about.html">About</a>
-            <a href="Donation.html">Donation</a>
-        </div>
-      </div>
+    </div>
     </header>
 
-    <section class="donation">
-      <h1>Make a Donation</h1>
-      <p>We appreciate your support! Please enter your donation amount below:</p>
-      <form>
-        <label for="amount">Amount:</label>
-        <input type="number" id="amount" name="amount" min="1" required>
-        <br>
-        <button type="submit">Donate</button>
-      </form>
-    </section>
-
-    <footer>
-      <p>© 2023 - Surrealist Inner Society, All rights reserved</p>
-    </footer>
-  </body>
+    <h3>Donation Contract</h3>
+    <button class="enableEthereumButton">Connect</button> 
+    (address: <span class="showAccount"></span>)
+    <br>
+    <input type="text" placeholder="name"  id="your_name"> 
+    <input type="text" placeholder="eth"  id="your_eth"> 
+    <button onclick="donateFunction();">Donate</button>
+    <br><br>
+    <h3>Donaters</h3>
+    <span id="people1"></span><span id="price1"></span><span id="address1"></span>
+    <span id="people2"></span><span id="price2"></span><span id="address2"></span>
+    <span id="people3"></span><span id="price3"></span><span id="address3"></span>
+    <span id="people4"></span><span id="price4"></span><span id="address4"></span>
+    <span id="people5"></span><span id="price5"></span><span id="address5"></span>
+<script>
+//Enable Web3
+async function loadWeb3(){
+    if(window.ethereum) {
+        window.web3 = new Web3(window.ethereum);
+    }
+}
+// Load Contract
+async function loadContract(){
+    return await new window.web3.eth.Contract(
+    [
+        {
+            "inputs": [
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                }
+            ],
+            "name": "addPerson",
+            "outputs": [],
+            "stateMutability": "payable",
+            "type": "function"
+        },
+        {
+            "inputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "",
+                    "type": "uint256"
+                }
+            ],
+            "name": "people",
+            "outputs": [
+                {
+                    "internalType": "uint256",
+                    "name": "id",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "string",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "internalType": "uint256",
+                    "name": "amount",
+                    "type": "uint256"
+                },
+                {
+                    "internalType": "address",
+                    "name": "sender_address",
+                    "type": "address"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ]
+        ,'0x4769Cb581cAc7ABfD5f5afdE04B392f7969F4c21');
+}
+// Read data from the contract
+async function getFunction() {
+    for (let i = 1; i <= 100; i++) {
+        get = await window.contract.methods.people(i).call();
+        if ( get[0] != 0 ){ // Continue for a loop until the ID is not equal to 0.
+            document.getElementById('people' +i).innerHTML = get[1] + ": ";
+            document.getElementById('price' +i).innerHTML = get[2]/1000000000000000000 + " ("; // Change wei to ETH
+            document.getElementById('address' +i).innerHTML = get[3] + ") <br>";
+        } else break;
+    }
+}
+// Load all functions
+async function load(){
+    await loadWeb3(); //Enable Web3
+    window.contract = await loadContract(); //Load Contract
+    getFunction(); //Read data from the contract
+}
+load();
+// Connect to MetaMask by clicking connect button. ( https://bit.ly/3qfe1Na )
+const ethereumButton = document.querySelector('.enableEthereumButton');
+const showAccount = document.querySelector('.showAccount');
+ethereumButton.addEventListener('click', () => {
+    getAccount();
+});
+// Get the user's wallet address
+async function getAccount() {
+    const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
+    showAccount.innerHTML = accounts;
+    return account = accounts[0];
+}
+// Donate function
+async function donateFunction() {
+    $name = document.getElementById('your_name').value;
+    $wei = document.getElementById('your_eth').value;
+    $eth = $wei * 1000000000000000000; // Change wei to ETH
+    $account = await getAccount();
+    set = await window.contract.methods.addPerson($name).send(
+        { 
+            from: $account,
+            value: $eth
+        }
+    );
+}
+</script>
+<footer>
+  <p>© 2023 - Surrealist Inner Society, All rights reserved</p>
+</footer>
+</body>
 </html>

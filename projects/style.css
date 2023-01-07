@@ -22,15 +22,16 @@
   section.projects{
     width:100%;
     min-height: 500px;
-    text-align: center;
-    padding:100px 0;
+    text-align:center;
+    padding:  50px 50px 10pc;
     color:black;
     }
   
   .project{
-    width: 80%;
-    margin: 0 auto;
-    text-align: left;
+    margin-top: 20px;
+    width:100%;
+    text-align: center;
+    color:black;
   }
   
   footer{
@@ -43,20 +44,42 @@
   }
   
   @media only screen and (max-width: 480px) {
-    .project{
-      width: 90%;
+    img {
+      width: 100%;
     }
-  }
-  
-  @media screen and (max-width: 768px){
-    header{
+    }
+    
+    @media only screen and (max-width: 1768px) {
+      img {
+        width: 30%;
+        margin-top: -0px;
+      }
+      }
+    
+    @media only screen and (max-width: 480px) {
+      button {
         text-align: center;
+      }
+      
     }
-    .menu{
-        text-align: center;
+    
+    @media screen and (max-width: 768px){
+      header{
+          text-align: center;
+      }
+      .menu{
+          text-align: center;
+      }
+      .w33,.w50{
+          width:100%;
+          margin-bottom: 20px;
+      }
     }
-    .project{
-        width: 100%;
-        margin-bottom: 20px;
-    }
-  }
+    
+    @media screen and (min-width: 1600px) and (min-height: 900px) {
+      /* Add your styles here */
+      footer {
+        width:100%;
+      margin-bottom: -150px;  }
+        }
+    

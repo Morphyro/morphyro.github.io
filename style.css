@@ -36,7 +36,7 @@ section.banner{
       background-color: white;
       cursor: pointer;
       position: absolute;
-      margin-left: -44px;
+      margin-left: -50px;
       margin-top: -13px;
       left: 50%;
       border: 0;
@@ -86,4 +86,3 @@ img {
       margin-bottom: 20px;
   }
 }
-
