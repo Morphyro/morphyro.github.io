@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-*{
-  margin:0;
-  padding:0;
-  box-sizing: border-box;
-}
-
 
 header{
   background-color: black;
@@ -33,47 +27,74 @@ section.banner{
   color:black;
   position: relative;
   }
+  
+                                                                  /* Inputs */
 
   
-  h3{
-    margin-top: 10%;
+
+  
+  /* Buttons */
+  button {
+    background-color: #000000;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
   }
   
-  body {
-    text-align: center;
-    }
-    
-    .enableEthereumButton {
-    display: inline-block;
-    
-    }
-    
-    .showAccount {
-    display: inline-block;
-  
-    }
-    
-    input {
-    display: grid;
-    margin-left: 715px;
-    margin-top: 5px;
-  
-    }
-    
-    button {
-    display: inline-block;
-    margin-top: 5px;
-    }
-    
-    #people1, #price1, #address1, #people2, #price2, #address2, #people3, #price3, #address3, #people4, #price4, #address4, #people5, #price5, #address5 {
-    display: inline-block;
-    }
+  button:hover {
+    opacity: 0.8;
+  }
+
+  /* Donation list */
+h3 {
+  text-align: center;
+}
+
+.showAccount {
+  font-weight: bold;
+  padding-left: center;
+
+}
+
+span {
+  display: inline-block;
+  width: 5%;
+  text-align: center;
+  padding-left: 33%;
+}
+
+#people1, #people2, #people3, #people4, #people5 {
+  text-align: left;
+}
+
+#price1, #price2, #price3, #price4, #price5 {
+  text-align: center;
+}
+
+#address1, #address2, #address3, #address4, #address5 {
+  text-align: right;
+}
 
 
 
 .w33{
   width:33.3%;
   padding:0 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
 }
 
 footer{
@@ -85,6 +106,7 @@ footer{
   background-color:black;
 }
 
+
 @media only screen and (max-width: 480px) {
 img {
   width: 100%;
@@ -92,6 +114,12 @@ img {
 }
 
 @media only screen and (max-width: 480px) {
+  input{
+    text-align: center;
+    display: grid;
+    margin-left: 715px;
+    margin-top: 5px;
+}
   button {
     text-align: center;
   }
@@ -102,6 +130,12 @@ img {
   header{
       text-align: center;
   }
+  input{
+    display: grid;
+    margin-left: 715px;
+    margin-top: 5px;
+    text-align: center;
+}
   .menu{
       text-align: center;
   }
@@ -110,3 +144,5 @@ img {
       margin-bottom: 20px;
   }
 }
+
+  
