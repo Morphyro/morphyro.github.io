@@ -5,12 +5,12 @@
     <link href="style.css" rel="stylesheet" />
 
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
-
+    
 </head>
-<body>
+<body class="white">
     <header>
     <div class="w50">
-      <a href=""><h2>Surrealist Inner Society</h2></a>
+      <a href="../index.html"><h2>Surrealist Inner Society</h2></a>
     </div>
     <div class="w50">
       <div class="menu">
@@ -24,18 +24,24 @@
 
     <h3>Donation Contract</h3>
     <button class="enableEthereumButton">Connect</button> 
-    <span class="showAccount"></span>
+    (address: <span class="showAccount"></span>)
     <br>
+    
     <input type="text" placeholder="name"  id="your_name"> 
+    
     <input type="text" placeholder="eth"  id="your_eth"> 
+    
     <button onclick="donateFunction();">Donate</button>
+    
     <br><br>
-    <h3>Donaters</h3>
+    
+    <h3 class="donaters">Donaters</h3>
     <span id="people1"></span><span id="price1"></span><span id="address1"></span>
     <span id="people2"></span><span id="price2"></span><span id="address2"></span>
     <span id="people3"></span><span id="price3"></span><span id="address3"></span>
     <span id="people4"></span><span id="price4"></span><span id="address4"></span>
     <span id="people5"></span><span id="price5"></span><span id="address5"></span>
+
 <script>
 //Enable Web3
 async function loadWeb3(){
