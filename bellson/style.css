@@ -1,18 +1,33 @@
 
+
 #estoque {
+  
     width: 800px;
     margin: 0 auto;
     text-align: center;
     padding-top: 10px;
   }
   
+  a {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
+    padding: 20px 10px;
+    background-color: #49ff4f;
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size:larger;
+  }
+  
+
   #sessoes {
     overflow: auto;
     height: auto;
   }
 body{
-    background-color:aliceblue;
-    position: relative
+  background-color:aliceblue;
+  position: relative
 }
 
   .produtos{
@@ -23,6 +38,7 @@ body{
   }
   
   .produto {
+    
     margin: 20px;
     border: 1px solid black;
     padding: 0px;
@@ -39,6 +55,7 @@ body{
 
   h1{
     border: 4px solid rgb(0, 0, 0);
+    margin: 2px;
 
   }
 

@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title>Calculadora de Potência de Produtos Térmicos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <a href="../index.html" class="botao">Clique aqui para voltar ao estoque</a>  <div id="estoque">
+      <div class="calculadora">
+        <h1>Calculadora de Potência de Produtos Térmicos</h1>
+        <form>
+          <label>Comprimento da canaleta (metros):</label>
+          <input type="text" id="comprimento_canaleta">
+          <br>
+          <label>Quantidade de canaletas:</label>
+          <input type="text" id="quantidade_canaleta">
+          <br>
+          <label>Tensão do produto:</label>
+          <select id="tensao_escolhida">
+            <option value="110">110v</option>
+            <option value="220">220v</option>
+          </select>
+          <br>
+          <label>Quantidade de parciais do produto (opcional):</label>
+          <input type="text" id="quantidade_parciais">
+          <br>
+          <button type="button" onclick="calcularPotencia()">Calcular Potência</button>
+        </form>
+        <p id="resultado"></p>
+      </div>
+      <script>
+        // valores de resistência pré-definidos
+        var resistencia_110v = 14;
+        var resistencia_220v = 39;
+  
+        function calcularPotencia() {
+          // inputs do usuário
+          var comprimento_canaleta = document.getElementById("comprimento_canaleta").value;
+          var quantidade_canaleta = document.getElementById("quantidade_canaleta").value;
+          var tensao_escolhida = document.getElementById("tensao_escolhida").value;
+          var quantidade_parciais = document.getElementById("quantidade_parciais").value;
+  
+          // verificação da tensão escolhida pelo usuário
+          var resistencia_usada;
+          if (tensao_escolhida == 110) {
+            resistencia_usada = resistencia_110v;
+          } else if (tensao_escolhida == 220) {
+            resistencia_usada = resistencia_220v;
+          } else {
+            document.getElementById("resultado").innerHTML = "Tensão inválida. Por favor, escolha 110v ou 220v.";
+            return;
+          }
+  
+          // cálculo da potência
+          var potencia;
+          if (quantidade_parciais === "") {
+            potencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada);
+          } else {
+            potencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada) / (quantidade_parciais ** 2);
+}
+var corrente = potencia / tensao_escolhida;
+    // mostra o resultado na tela
+    document.getElementById("resultado").innerHTML = "A potência do produto é de " + potencia + " Watts e a corrente é de " + corrente + " Amperes.";
+  }
+</script>

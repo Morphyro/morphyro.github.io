@@ -7,7 +7,7 @@
   <title>Sistema de Estoque</title>
 </head>
 <body>
-  <div id="estoque">
+  <a href="./calculadora/calculadora.html" class="botao">Clique aqui para acessar a calculadora</a>  <div id="estoque">
     <h1>Controle de Estoque
     </h1>
 
@@ -255,7 +255,7 @@
 
     <div class="produto">
       <div class="produtos">
-      <p>Cinta/gaiola/bolsa de pedra (6 m) (80W)</p>
+      <p>Cinta/gaiola/boldapedra (6 m) (80W)</p>
       </div>
       <p>Resistência (6 m)  110v:  0  </p>
       <p>Resistência (6 m)  220v:  0  </p>
@@ -264,7 +264,7 @@
 
     <div class="produto">
       <div class="produtos">
-      <p>Resistência Montada (8 m) (80W)</p>
+      <p>Resistência Montada 8 metros (80W)</p>
       </div>
       <p>Resistência (8 m)  110v:  0  </p>
       <p>Resistência (8 m)  220v:  0  </p>
@@ -272,7 +272,7 @@
     </div>
 
 
-	<h2 id="materiais" onclick="expandirRetrair()">Matérias-primas</h2>
+	<h2 id="materiais" onclick="expandirRetrair()">Materias primas</h2>
     <div class="produto">
       <div class="produtos">
       <p>Cabos Manga Brancos/Pretos Injetados</p>
@@ -352,6 +352,9 @@
 
 	<script>
 
+    function redirecionar(){
+        window.location.href="calculadora.html";
+    }
 
 		// Obtém todos os h2 na página
 		var h2s = document.querySelectorAll("h2");
