@@ -23,22 +23,24 @@
           <label>Quantidade de parciais do produto (opcional):</label>
           <input type="text" id="quantidade_parciais">
           <br>
-          <button type="button" onclick="calcularPotencia()">Calcular Potência</button>
+          <button type="button" onclick="calcularResistencia()">Calcular Potência</button>
         </form>
         <p id="resultado"></p>
       </div>
+
+
       <script>
         // valores de resistência pré-definidos
         var resistencia_110v = 12.5;
         var resistencia_220v = 39;
-  
-        function calcularPotencia() {
+      
+        function calcularResistencia() {
           // inputs do usuário
           var comprimento_canaleta = document.getElementById("comprimento_canaleta").value;
           var quantidade_canaleta = document.getElementById("quantidade_canaleta").value;
           var tensao_escolhida = document.getElementById("tensao_escolhida").value;
           var quantidade_parciais = document.getElementById("quantidade_parciais").value;
-  
+      
           // verificação da tensão escolhida pelo usuário
           var resistencia_usada;
           if (tensao_escolhida == 110) {
@@ -49,16 +51,29 @@
             document.getElementById("resultado").innerHTML = "Tensão inválida. Por favor, escolha 110v ou 220v.";
             return;
           }
-  
+      
           // cálculo da potência
-          var potencia;
+          var resistencia;
           if (quantidade_parciais === "") {
-            potencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada);
+            resistencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada);
           } else {
-            potencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada) / (quantidade_parciais ** 2);
-}
-var corrente = potencia / tensao_escolhida;
-    // mostra o resultado na tela
-    document.getElementById("resultado").innerHTML = "A resistência do produto é de " + potencia + " Ω. Divida pela (tensão)² para saber a potência!";
-  }
-</script>
+            resistencia = (quantidade_canaleta * comprimento_canaleta * resistencia_usada) / (quantidade_parciais ** 2);
+          }
+          //calculo da corrente
+          var corrente = tensao_escolhida / resistencia;
+          //calculo de watts
+          var watts = (tensao_escolhida ** 2) / resistencia;
+          var corrente_127v = 127 / resistencia;
+          var watts_127v = (127 ** 2) / resistencia;
+      
+          // mostra o resultado na tela sem casas decimais
+          if(tensao_escolhida == 110){
+            document.getElementById("resultado").innerHTML = "110v:  " + Math.round(resistencia) + " Ω, Potência " + Math.round(watts) + " watts 127v: " + Math.round(watts_127v) + " watts.";
+          } else {
+            document.getElementById("resultado").innerHTML = " Resistência  " + Math.round(resistencia) + " Ω, Potência " + Math.round(watts) + " watts.";
+          }
+        }       
+</script>   
+      
+</body>
+</html>
