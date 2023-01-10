@@ -9,17 +9,7 @@
 <body>
   <div id="estoque">
     <h1>Controle de Estoque
-			<div class="menu">
-			  <a href="#mantas">Mantas</a>
-			  <a href="#lençois">Lençóis</a>
-			  <a href="#esteticos">Estéticos</a>
-			  <a href="#hospitalares">Hospitalares</a>
-			  <a href="#veterinarios">Veterinários</a>
-			  <a href="#resistencias">Resistências</a>
-			  <a href="#materiais">Materiais</a>
-			  <a href="#miolos">Miolos</a>
 
-			</div>
     </h1>
 
 	<h2 id="mantas" onclick="expandirRetrair()">Mantas</h2>
@@ -168,45 +158,7 @@
     </div>
 
 
-
 	<script>
-
-		var links = document.querySelectorAll(".menu a");
-
-		// Adiciona um evento de clique a cada link
-		links.forEach(function(link) {
-		link.addEventListener("click", function(event) {
-		// Evita que o link seja aberto em uma nova página
-		event.preventDefault();
-
-		// Obtém o valor do atributo href do link clicado
-		var href = this.getAttribute("href");
-
-		// Obtém o elemento correspondente ao link clicado
-		var element = document.querySelector(href);
-
-		// Obtém todos os h2 na página
-		var h2s = document.querySelectorAll("h2");
-
-		// Esconde todos os h2 e suas respectivas divs
-		h2s.forEach(function(h2) {
-		h2.setAttribute("data-show", "false");
-		var divs = h2.nextElementSibling;
-		while (divs && divs.tagName !== "H2") {
-			divs.style.display = "none";
-			divs = divs.nextElementSibling;
-		}
-		});
-
-			// Mostra o elemento clicado e suas respectivas divs
-			element.setAttribute("data-show", "true");
-			var divs = element.nextElementSibling;
-			while (divs && divs.tagName !== "H2") {
-			divs.style.display = "block";
-			divs = divs.nextElementSibling;
-			}
-			});
-			});
 
 
 		// Obtém todos os h2 na página
