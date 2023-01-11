@@ -6,31 +6,30 @@
   <body>
       <div class="calculadora">
         <a href="../index.html" class="botao">Clique aqui para voltar ao estoque</a>  <div id="estoque">
-
           <h1>Calculadora de Potência</h1>
           <p> Sonobel - Produtos Térmicos © </p>
-        <form>
-          <label>Quantidade de canaletas:</label>
-          <input type="text" id="quantidade_canaleta">
-          <br>
-          <label>Comprimento da canaleta (metros):</label>
-          <input type="text" id="comprimento_canaleta">
-          <br>
-          <label>Tensão do produto:</label>
-          <select id="tensao_escolhida">
-            <option value="110">110v</option>
-            <option value="220">220v</option>
-          </select>
-          <br>
-          <label>Quantidade de parciais do produto (opcional):</label>
-          <input type="text" id="quantidade_parciais">
-          <br>
-          <button type="button" onclick="calcularResistencia()">Calcular Potência</button>
-        </form>
+          <form>
+            <label>Quantidade de canaletas:</label>
+            <input type="text" id="quantidade_canaleta">
+            <br>
+            <label>Comprimento da canaleta (metros):</label>
+            <input type="text" id="comprimento_canaleta">
+            <br>
+            <label>Tensão do produto:</label>
+            <select id="tensao_escolhida">
+              <option value="110">110v</option>
+              <option value="220">220v</option>
+            </select>
+            <br>
+            <label>Quantidade de parciais do produto (opcional):</label>
+            <input type="text" id="quantidade_parciais">
+            <br>
+            <button type="button" onclick="calcularResistencia()">Calcular Potência</button>
+          </form>
         <p id="resultado"></p>
       </div>
-
-
+    
+    
       <script>
         // valores de resistência pré-definidos
         var resistencia_110v = 12.5;
@@ -63,19 +62,22 @@
           }
           //calculo da corrente
           var corrente = tensao_escolhida / resistencia;
+          var corrente_127v = 127 / resistencia;
           //calculo de watts
           var watts = (tensao_escolhida ** 2) / resistencia;
-          var corrente_127v = 127 / resistencia;
           var watts_127v = (127 ** 2) / resistencia;
+          // round corrente and corrente_127v to 2 decimal places
+          var corrente = corrente.toFixed(2);
+          var corrente_127v = corrente_127v.toFixed(2);
       
           // mostra o resultado na tela sem casas decimais
           if(tensao_escolhida == 110){
-            document.getElementById("resultado").innerHTML = "110v:  " + Math.round(resistencia) + " Ω,  Potência " + Math.round(watts) + " watts  //  (127v: " + Math.round(watts_127v) + " watts)";
+            document.getElementById("resultado").innerHTML = "(110v: Resistência: " + Math.round(resistencia) + "Ω,  Potência: " + Math.round(watts) + "W, Corrente " + corrente + "A)   ////  (127v: " + Math.round(watts_127v) + "W, " + corrente_127v + "A)";
           } else {
-            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + " Ω,  " + Math.round(watts) + " watts";
-          }
-        }       
-</script> 
-      
-</body>
+            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + "Ω,  " + Math.round(watts) + "W, Corrente: " + corrente + "A";
+}
+}
+</script>
+
+  </body>
 </html>
