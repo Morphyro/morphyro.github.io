@@ -22,7 +22,7 @@ a {
     display: block;
     margin: 20px auto;
     padding: 20px 10px;
-    background-color: #49ff4f;
+    background-color: #e7640c;
     color: rgb(0, 0, 0);
     border-radius: 4px;
     text-decoration: none;
@@ -59,7 +59,7 @@ select {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #47BDD7;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -69,7 +69,7 @@ button {
 }
 
 button:hover {
-    background-color: #3e8e41;
+    background-color: #47BDD7;
 }
 
 #resultado {
