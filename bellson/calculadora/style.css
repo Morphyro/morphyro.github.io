@@ -1,8 +1,8 @@
 body {
     background-color:aliceblue;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,7 +12,6 @@ body {
 .calculadora {
     width: 800px;
     background-color:#c7f5ff;
-    padding: 0px;
     border-radius: 10px;
     text-align: center;
     border: 1px solid black;
@@ -21,6 +20,7 @@ body {
 
  
 a {
+    padding-top: 30px;
     text-align: center;
     display: block;
     margin: 20px auto;
@@ -52,7 +52,9 @@ label {
 input[type="text"] {
     padding: 8px;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    border: 2px solid rgb(154, 198, 255);
+    text-align: center;
+
 }
 
 select {
