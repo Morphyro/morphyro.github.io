@@ -62,22 +62,22 @@
           }
           //calculo da corrente
           var corrente = tensao_escolhida / resistencia;
+          var corrente_127v = 127 / resistencia;
           //calculo de watts
           var watts = (tensao_escolhida ** 2) / resistencia;
-          var corrente_127v = 127 / resistencia;
           var watts_127v = (127 ** 2) / resistencia;
-          // round corrente to 2 decimal places
+          // round corrente and corrente_127v to 2 decimal places
           var corrente = corrente.toFixed(2);
+          var corrente_127v = corrente_127v.toFixed(2);
       
           // mostra o resultado na tela sem casas decimais
           if(tensao_escolhida == 110){
-            document.getElementById("resultado").innerHTML = "110v: Resistência:  " + Math.round(resistencia) + "Ω,  Potência: " + Math.round(watts) + "W, Corrente: " + corrente + "A  //  (127v: " + Math.round(watts_127v) + "W)";
+            document.getElementById("resultado").innerHTML = "(110v: Resistência: " + Math.round(resistencia) + "Ω,  Potência: " + Math.round(watts) + "W, Corrente " + corrente + "A)   ////  (127v: " + Math.round(watts_127v) + "W, " + corrente_127v + "A)";
           } else {
-            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + " Ω,  " + Math.round(watts) + "W, Corrente: " + corrente + "A";
-          }
-        }       
+            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + "Ω,  " + Math.round(watts) + "W, Corrente: " + corrente + "A";
+}
+}
 </script>
 
   </body>
 </html>
-            
