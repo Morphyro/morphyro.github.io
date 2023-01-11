@@ -10,10 +10,12 @@ body {
 
 .calculadora {
     width: 800px;
-    background-color:aliceblue;
-    padding: 30px;
+    background-color:#c7f5ff;
+    padding: 0px;
     border-radius: 10px;
     text-align: center;
+    border: 1px solid black;
+
 }
 
  
@@ -24,7 +26,7 @@ a {
     padding: 20px 10px;
     background-color: #e7640c;
     color: rgb(0, 0, 0);
-    border-radius: 4px;
+    border: 3px solid black;
     text-decoration: none;
     font-size:larger;
     }
