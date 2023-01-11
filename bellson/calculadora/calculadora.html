@@ -69,12 +69,12 @@
       
           // mostra o resultado na tela sem casas decimais
           if(tensao_escolhida == 110){
-            document.getElementById("resultado").innerHTML = "110v:  " + Math.round(resistencia) + " Ω,  Potência " + Math.round(watts) + " watts  127v: " + Math.round(watts_127v) + " watts.";
+            document.getElementById("resultado").innerHTML = "110v:  " + Math.round(resistencia) + " Ω,  Potência " + Math.round(watts) + " watts  //  (127v: " + Math.round(watts_127v) + " watts)";
           } else {
-            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + " Ω,  " + Math.round(watts) + " watts.";
+            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + " Ω,  " + Math.round(watts) + " watts";
           }
         }       
-</script>   
+</script> 
       
 </body>
 </html>
