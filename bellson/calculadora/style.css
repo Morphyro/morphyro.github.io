@@ -33,7 +33,6 @@ a {
     }
 
 h1 {
-    
     text-align: center;
     margin: 20px 0;
 }
@@ -67,7 +66,7 @@ button {
     background-color: #47BDD7;
     color: black;
     padding: 12px 20px;
-    border: none;
+    border: 1px solid rgb(0, 0, 0);
     border-radius: 4px;
     cursor: pointer;
     margin-top: 20px;
