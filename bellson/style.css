@@ -1,3 +1,6 @@
+
+            
+            
             #estoque {
               font-family: Arial, sans-serif;
               width: 800px;
@@ -29,9 +32,9 @@
               height: auto;
             }
 
-            body{
+            .media{
             background-color:aliceblue;
-            position: relative
+            position: relative;
             }
 
             .produtos{
@@ -70,11 +73,23 @@
             h1{
               border: 3px solid rgb(0, 0, 0);
               margin: 2px;
+                        }
 
-            }
+             @media only screen and (max-width:480px) {
+                a.botao {
+                text-align: center;
+                }
+                h1 {
+                text-align: center;
+                height: 100vh;
 
-            @media (max-width: 800px) {
-              #estoque {
-                width: 95%;
-              }
-            }
+                }
+                body {
+                height: 100vh;
+                }
+                }
+                    
+
+                 
+                              
+              
