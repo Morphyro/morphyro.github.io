@@ -16,8 +16,7 @@ body {
 
 .calculadora {
     width: 60%;
-    height: 95%;
-    max-height: auto;
+    height: 100%;
     background-color:#c7f5ff;
     text-align: center;
     border: 1px solid black;
@@ -26,6 +25,7 @@ body {
     border-radius: 10px;
     text-align: center;
     border: 1px solid black;
+    display: block;
 
 }
 
@@ -68,7 +68,6 @@ label {
 
 input[type="text"] {
     height: 35;
-    margin-top: 10px;
     border-radius: 10px;
     border: 2px solid rgb(154, 198, 255);
     text-align: center;
@@ -77,7 +76,6 @@ input[type="text"] {
 
 
 select {
-    margin-top: 10px;
     padding: 8px;
     border-radius: 4px;
     border: 1px solid rgb(0, 0, 0);
@@ -98,7 +96,6 @@ button:hover {
 }
 
 #resultado {
-    margin-top: 20;
     text-align: center;
     font-weight: bold;
     font-size:small;
