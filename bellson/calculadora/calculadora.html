@@ -1,20 +1,26 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Resistência de Produtos Térmicos</title>
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+  
   <body>
-      <div class="calculadora">
-        <a href="../index.html" class="botao">Clique aqui para voltar ao estoque</a>  <div id="estoque">
+      <div class="calculadora"> 
+        <a href="../index.html" class="botao">Clique aqui para voltar ao estoque</a>  
+        <div id="estoque">
           <h1>Calculadora de Potência</h1>
           <p> Sonobel - Produtos Térmicos © </p>
           <form>
             <label>Quantidade de canaletas:</label>
             <input type="text" id="quantidade_canaleta">
+            
+            
             <br>
             <label>Comprimento da canaleta (metros):</label>
             <input type="text" id="comprimento_canaleta">
             <br>
+            
             <label>Tensão do produto:</label>
             <label>(Resistências Certificadas)</label>
 
@@ -30,6 +36,8 @@
           </form>
         <p id="resultado"></p>
       </div>
+  
+      
     
     
       <script>
@@ -74,9 +82,9 @@
       
           // mostra o resultado na tela sem casas decimais
           if(tensao_escolhida == 110){
-            document.getElementById("resultado").innerHTML = "(110v: Resistência: " + Math.round(resistencia) + "Ω,  Potência: " + Math.round(watts) + "W, Corrente " + corrente + "A)   ////  (127v: " + Math.round(watts_127v) + "W, " + corrente_127v + "A)";
+            document.getElementById("resultado").innerHTML = "(110v: Resistência: " + Math.round(resistencia) + "Ω,  Potência: " + Math.round(watts) + "W, Corrente " + corrente + "A)  (127v: " + Math.round(watts_127v) + "W, " + corrente_127v + "A)";
           } else {
-            document.getElementById("resultado").innerHTML = "   " + Math.round(resistencia) + "Ω,  " + Math.round(watts) + "W, Corrente: " + corrente + "A";
+            document.getElementById("resultado").innerHTML = "(220v: Resistência: " + Math.round(resistencia) + " Ω, Potência: " + Math.round(watts) + "W, Corrente: " + corrente + "A)";
 }
 }
 </script>
