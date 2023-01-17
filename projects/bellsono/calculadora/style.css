@@ -112,8 +112,15 @@ a:hover{
     #resultado{
         font-size: medium;
     }
+
     a{
         font-size:large;
+    }
+    
+    label {
+        margin-top: -5px;
+        font-size: 20px;
+        margin-bottom: 3px;
     }
 
     p{
@@ -124,7 +131,11 @@ a:hover{
         margin: 0;
     }
 
+    button{
+        margin-bottom: -15px;
+    }
 }
+
 
 @media screen and (max-width:768px) {
     .calculadora{
@@ -133,15 +144,19 @@ a:hover{
         height: 100%;
         margin: auto ;
         padding: auto;  
-        }
-        
-        body{
+    }
+    
+    body{
             margin: 5;
             padding: 0;
             height: auto;
         }
 
-
+        label {
+            margin-top: -5px;
+            font-size: 20px;
+            margin-bottom: 3px;
+        }
 
         h1{
             font-size: x-large;     
