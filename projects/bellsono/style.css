@@ -24,8 +24,9 @@
             }
 
             a.botao{
+              position: relative;
+              margin: auto;
               max-width: 800px;
-              margin-left: 306px;
               margin-top: 10px;
               
             }

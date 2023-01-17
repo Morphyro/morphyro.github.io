@@ -20,7 +20,6 @@ body {
     background-color:#c7f5ff;
     text-align: center;
     border: 1px solid black;
-    padding-bottom: 30px;
     background-color:#c7f5ff;
     border-radius: 10px;
     text-align: center;
@@ -62,7 +61,6 @@ form {
 
 label {
     font-size: large;
-    padding: 3px;
 }
 
 
@@ -71,7 +69,6 @@ input[type="text"] {
     border-radius: 10px;
     border: 2px solid rgb(154, 198, 255);
     text-align: center;
-
 }
 
 
@@ -90,6 +87,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
 }
+
 
 button:hover {
     background-color: #47BDD7;
