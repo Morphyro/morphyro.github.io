@@ -42,26 +42,6 @@
     color: rgb(50, 3, 71);
     background-color:black;
   }
-  
-  @media only screen and (max-width: 480px) {
-    img {
-      width: 100%;
-    }
-    }
-    
-    @media only screen and (max-width: 1768px) {
-      img {
-        width: 30%;
-        margin-top: -0px;
-      }
-      }
-    
-    @media only screen and (max-width: 480px) {
-      button {
-        text-align: center;
-      }
-      
-    }
     
     @media screen and (max-width: 768px){
       header{
@@ -74,12 +54,17 @@
           width:100%;
           margin-bottom: 20px;
       }
+
+      button {
+        text-align: center;
+      }
+
     }
     
     @media screen and (min-width: 1600px) and (min-height: 900px) {
       /* Add your styles here */
       footer {
         width:100%;
-      margin-bottom: -150px;  }
+        margin-bottom: -150px;  }
         }
     

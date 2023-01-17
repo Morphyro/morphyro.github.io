@@ -1,0 +1,127 @@
+
+            
+            
+            #estoque {
+              font-family: Arial, sans-serif;
+              max-width: 800px;
+              margin: 10px auto;
+              text-align: center;
+              padding-top: 20px;
+              display:block;
+              
+            }
+
+            h1{
+              max-width: 800px;
+              text-align: center;
+              border-radius:10px;
+              border: 2px solid black;
+              padding: 10px;
+              left: 0;
+              background-color: #47BDD7;
+              border: 3px solid rgb(0, 0, 0);
+              margin: auto;
+            }
+
+            a.botao{
+              max-width: 800px;
+              margin-left: 306px;
+              margin-top: 10px;
+              
+            }
+            
+            a {
+              font-family: Arial, sans-serif;
+              text-align: center;
+              display:block;
+              padding: 20px 10px;
+              background-color: #e7640c;
+              color: rgb(0, 0, 0);
+              border: 3px solid black;
+              text-decoration: none;
+              font-size:xx-large;
+              border-radius: 10px;
+              
+
+            }
+
+
+            label{
+              font-size: large;
+            }
+
+            #sessoes {
+              overflow: auto;
+              height: auto;
+            }
+
+            .botao{
+              max-width: 800px;
+            }
+
+            .produtos{
+              height: 50px;
+              border-radius:10px;
+              background-color:#aaebfa;
+              border: 1px solid black;
+              font-size:medium;
+            }
+
+            .produto {
+              border-radius:10px;
+              margin: 20px;
+              border: 1px solid black;
+              padding: 0px;
+              text-align: center;
+            }
+            p{
+              font-size: large;
+            }
+            
+            h2 {
+              border-radius:10px;
+              cursor:pointer;
+              border: 2px solid black;
+              margin: 10;
+              padding: 10px;
+              background-color: #d8f2f8;
+            }
+
+
+
+           @media screen and (max-width:768px) {
+            a.botao{
+              margin: auto;
+              margin-top: 10px;
+              
+            }
+            
+            .botao{
+              margin-top: -3px;
+              height: 30px;
+              font-size: 20px;
+              text-align: center;
+            }
+
+            h1{
+              padding-top: 15px;
+              height: 35px;
+              font-size: x-large;
+              margin: auto ;
+              padding: auto;
+            }
+
+            p{
+              font-size: medium;
+            }
+          }
+
+
+
+          
+                
+                    
+
+                 
+                              
+              

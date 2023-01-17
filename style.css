@@ -2,50 +2,50 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-
 header{
+  font-size: large;
+  height: 10%;
+  padding: 5px;
   background-color: black;
-  display: flex;
   flex-wrap: wrap;
 }
 
-.w50{
+.tittle{
   width:100%;
   padding:0 10px;
   text-align: center;
 }
 
-.menu{text-align: center;}
+.menu{
+  text-align: center;
+}
 
 section.banner{
-  width:100%;
-  min-height: 500px;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  padding-top: 5%;
   text-align: center;
-  padding:100px 0;
   color:black;
   position: relative;
-  }
+}
 
-
-  
-  button{
-      width: 100px;
-      height: 40px;
-      background-color: white;
-      cursor: pointer;
-      position: absolute;
-      margin-left: -50px;
-      margin-top: -13px;
-      left: 50%;
-      border: 0;
-      top: 50%;    
-      color: black;
-      transform:translate(-50%, -50);
-  }
-
-
+button{
+    width: 80px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: absolute;
+    margin-left: -38px;
+    left: 50%;
+    border: 0;
+    top: 55%;    
+    color: black;
+    transform:translate(-50%, -50);
+}
 
 .w33{
   width:33.3%;
@@ -53,42 +53,77 @@ section.banner{
 }
 
 footer{
-  position: absolute;
-  bottom:0;
-  width:100%;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
   text-align: center;
   color: rgb(50, 3, 71);
   background-color:black;
 }
 
-@media only screen and (max-width: 480px) {
-img {
-  width: 100%;
-}
-}
+@media screen and (max-width: 768px){
 
-@media only screen and (max-width: 480px) {
-  button {
-    text-align: center;
+
+  .sis{
+    margin-top: -11%;
+    width:100%;
   }
-  
+
+  header{
+      width: 100%;
+      text-align: center;
+  }
+
+  section.banner{
+      margin: auto;
+      margin-top: 100px;
+
+  }
+
+  button{
+    position: absolute;
+    left: 45%;
+    margin: 0;
+  }
+
+  header{
+    text-align: center;
+    height: 10%;
+    padding-bottom: 10px;
+
+    }
+
+  .w33,.tittle, .menus  {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: large;
+      margin: auto ;
+      padding: 5px;
+  }
 }
 
 @media screen and (max-width: 768px){
-  header{
-      text-align: center;
+    .sis{
+    margin: 0;
   }
-  .menu{
-      text-align: center;
-  }
-  .w33,.w50{
-      width:100%;
-      margin-bottom: 20px;
-  }
+
+    button{
+      position: absolute;
+      left: 39%;
+      top: 48%; 
+      margin: 0;
+    }
 }
 
-@media screen and (max-width: 1768px){
-footer{
-  position: relative;
-}
+@media screen and (max-width: 320px){
+  .sis{
+    margin: 0;
+  }
+  button{
+    position: absolute;
+    left: 39%;
+    top: 48%;    
+    margin: 0;
+  }
 }

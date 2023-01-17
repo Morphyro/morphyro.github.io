@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>Sistema de Estoque</title>
+</head>
+<body>
+  <h1>Controle de Estoque</h1>
+  <a href="./calculadora/calculadora.html" class="botao">► Acessar a calculadora ◄</a>
+    <div id="estoque">
+
+      <label>▼ Clique nos Itens abaixo ▼</label>
+	<h2 id="mantas" onclick="expandirRetrair()">Mantas</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Manta Padrão Estética Certificada</p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>M. Envolver Cert. (1.35 x 0.75) </p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>M. Envolver Cert. (1.50 x 0.90) </p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>M. Envolver Cert. (1.80 x 1.00) </p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>M. Cobrir Adulto Cert. (1.90 x 1.20)</p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>M. Cobrir Infantil Cert. (1,25 x 0,60)</p>
+      </div>
+      <p>Mantas 110v:  0  </p>
+      <p>Mantas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+  <!--
+	<h2 id="lençois" onclick="expandirRetrair()">Lençóis</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Lençól Casal Padrão</p>
+      </div>
+      <p>Lençóis 110v:  0  </p>
+      <p>Lençóis  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Lençól de Solteiro</p>
+      </div>
+      <p>Lençóis 110v:  0  </p>
+      <p>Lençóis  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Lençól Queen-Size </p>
+      </div>
+      <p>Lençóis 110v:  0  </p>
+      <p>Lençóis  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Lençól King-Size </p>
+      </div>
+      <p>Lençóis 110v:  0  </p>
+      <p>Lençóis  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Lençól Super-King-Size </p>
+      </div>
+      <p>Lençóis 110v:  0  </p>
+      <p>Lençóis  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <!-- 
+	<h2 id="esteticos" onclick="expandirRetrair()">Estéticos</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Bolsa de Pedra P</p>
+      </div>
+      <p>Bolsas 110v:  0  </p>
+      <p>Bolsas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Bolsa de Pedra M</p>
+      </div>
+      <p>Bolsas 110v:  0  </p>
+      <p>Bolsas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Bolsa de Pedra G</p>
+      </div>
+      <p>Bolsas 110v:  0  </p>
+      <p>Bolsas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Bolsa de Pedra GG</p>
+      </div>
+      <p>Bolsas 110v:  0  </p>
+      <p>Bolsas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Cinta Térmica para Abdômen</p>
+      </div>
+      <p>Cintas 110v:  0  </p>
+      <p>Cintas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Máscara Térmica</p>
+      </div>
+      <p>Máscara 110v:  0  </p>
+      <p>Máscara 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+        <p>Papada Térmica</p>
+      </div>
+      <p>Papada 110v:  0  </p>
+      <p>Papada 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+--
+<!-- 
+	<h2 id="hospitalares" onclick="expandirRetrair()">Hospitalares</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Aquecedor Soro e contraste 500ml</p>
+      </div>
+      <p>Soros 110v:  0  </p>
+      <p>Soros 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Aquecedor Soro e contraste 1000ml </p>
+      </div>
+      <p>Soros 110v:  0  </p>
+      <p>Soros 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Aquecedor Soro e contraste 4000ml </p>
+      </div>
+      <p>Soros 110v:  0  </p>
+      <p>Soros 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Maca Hospitalar</p>
+      </div>
+      <p>Macas 110v:  0  </p>
+      <p>Macas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+  -->
+
+	<h2 id="veterinarios" onclick="expandirRetrair()">Veterinários</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Colchonete Térmico p/ Gaiola</p>
+      </div>
+      <p>Gaiolas 110v:  0  </p>
+      <p>Gaiolas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+    <div class="produto">
+      <div class="produtos">
+      <p>Colchonete Térmico p/ Mesa </p>
+      </div>
+      <p>Mesas 110v:  0  </p>
+      <p>Mesas 220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+	<h2 id="resistencias" onclick="expandirRetrair()">Resistências</h2>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Papada Térmica (800mm) (28W)</p>
+      </div>
+      <p>Resistências (800mm) 110v:  57  </p>
+      <p>Resistências (800mm) 220v:  12  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Máscara Térmica (1,8 m) (28w)</p>
+      </div>
+      <p>Resistência (1,80m)  110v:  58  </p>
+      <p>Resistência (1,80m)  220v:  42  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Cinta/gaiola/boldapedra (6 m) (80W)</p>
+      </div>
+      <p>Resistência (6 m)  110v:  0  </p>
+      <p>Resistência (6 m)  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Resistência Montada 8 metros (80W)</p>
+      </div>
+      <p>Resistência (8 m)  110v:  0  </p>
+      <p>Resistência (8 m)  220v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+
+	  <!--  -->
+    <div class="produto">
+      <div class="produtos">
+      <p>Cabos Dig. Brancos/Pretos Injet.</p>
+      </div>
+      <p>Cabos Injetados Brancos:  0  </p>
+      <p>Cabos Injetados Pretos :  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Cabos Manga Branco/Preto </p>
+      </div>
+      <p>Cabo Branco:  0  </p>
+      <p>Cabo Preto :  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Sensores NTC</p>
+      </div>
+      <p>Sensores:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Termostato 80°c</p>
+      </div>
+      <p>Termostatos:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Fios de Ligação</p>
+      </div>
+      <p>Rolos de fio:  1 vermelho  </p>
+      <p>Condição:  3/4  </p>
+      <p>Observações:</p>
+    </div>
+
+	<h2 id="miolos" onclick="expandirRetrair()">Miolos</h2>
+    <div class="produto">
+      <div class="produtos">
+      <p>Miolo de Bolsa de Pedra</p>
+      </div>
+      <p>Miolos vazios:  0  </p>
+      <p>Miolos 110v:  0  </p>
+      <p>Miolos 210v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Miolo de Soro</p>
+      </div>
+      <p>Miolos vazios:  0  </p>
+      <p>Miolos 110v:  0  </p>
+      <p>Miolos 210v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+    <div class="produto">
+      <div class="produtos">
+      <p>Miolo de Máscara</p>
+      </div>
+      <p>Miolos vazios:  0  </p>
+      <p>Miolos 110v:  0  </p>
+      <p>Miolos 210v:  0  </p>
+      <p>Observações:</p>
+    </div>
+
+
+
+
+	<script>
+
+    function redirecionar(){
+        window.location.href="calculadora.html";
+    }
+
+		// Obtém todos os h2 na página
+		var h2s = document.querySelectorAll("h2");
+	  
+		// Adiciona um evento de clique a cada h2
+		h2s.forEach(function(h2) {
+		  h2.addEventListener("click", function() {
+			// Obtém o valor do atributo data-show do h2 clicado
+			var show = this.getAttribute("data-show");
+	  
+			// Alterna o valor do atributo data-show para true ou false
+			this.setAttribute("data-show", show === "true" ? "false" : "true");
+	  
+			// Obtém todas as divs dentro do h2 clicado
+			var divs = this.nextElementSibling;
+			while (divs && divs.tagName !== "H2") {
+			  // Alterna o valor do atributo hidden para true ou false
+			  divs.hidden = divs.hidden === false ? true : false;
+	  
+			  // Pula para a próxima div
+			  divs = divs.nextElementSibling;
+			}
+		  });
+		});
+	  
+		// Oculta todas as divs no carregamento da página
+		h2s.forEach(function(h2) {
+		  h2.setAttribute("data-show", "false");
+	  
+		  // Obtém todas as divs dentro do h2
+		  var divs = h2.nextElementSibling;
+		  while (divs && divs.tagName !== "H2") {
+			divs.hidden = true;
+	  
+			// Pula para a próxima div
+			divs = divs.nextElementSibling;
+		  }
+		});
+
+
+		
+	  </script>
+
+  </body>
+  </html>
+    
