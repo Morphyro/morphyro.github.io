@@ -2,50 +2,56 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   }
   
-  header {
+  header{
+    font-size: large;
+    padding: 10px;
     background-color: black;
-    display: flex;
     flex-wrap: wrap;
   }
   
-  .w50 {
+  
+  .sis {
     width: 100%;
-    padding: 0 10px;
     text-align: center;
   }
   
+  h3{
+    margin-top: -40%;
+    font-size: 30px;
+  }
+
   .menu {
     text-align: center;
   }
   
   section.about {
-    width: 100%;
-    padding: 100px;
+    padding-top: 50%;
     text-align: center;
+    position: relative;
     color: black;
   }
   
-  footer {
-    position: absolute;
+  p.about{
+    margin: 30px;
+    font-size: x-large;
+  }
+footer.p{
+  margin: 0;
+  max-width: 100%;
+  font-size: 0;
+}
+  footer{
+    position: fixed;
     bottom: 0;
     width: 100%;
+    left: 0;
     text-align: center;
-    color: rgb(50, 3, 71);
-    background-color: black;
+    color:#551a8b;
+    background-color:black;
   }
   
-  @media only screen and (max-width: 480px) {
-    header {
-      text-align: center;
-    }
-    .menu {
-      text-align: center;
-    }
-    .w50 {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  }
+  
   

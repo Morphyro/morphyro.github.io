@@ -27,8 +27,8 @@
               position: relative;
               margin: auto;
               max-width: 800px;
-              margin-top: 10px;
-              
+              margin-top: 10px;   
+
             }
             
             a {
@@ -95,7 +95,7 @@
             a.botao{
               margin: auto;
               margin-top: 10px;
-              
+              font-size: larger;
             }
             
             .botao{
@@ -106,9 +106,9 @@
             }
 
             h1{
-              padding-top: 15px;
+              padding-top: 10px;
               height: 35px;
-              font-size: x-large;
+              font-size: xx-large;
               margin: auto ;
               padding: auto;
             }

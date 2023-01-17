@@ -2,16 +2,19 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    text-decoration: none;
   }
   
   
   header{
-    background-color: black;
-    display: flex;
-    flex-wrap: wrap;
-  }
+      font-size: large;
+      padding: 10px;
+      background-color: black;
+      flex-wrap: wrap;
+    }
   
-  .w50{
+  
+  .sis{
     width:100%;
     padding:0 10px;
     text-align: center;
@@ -23,7 +26,7 @@
     width:100%;
     min-height: 500px;
     text-align:center;
-    padding:  50px 50px 10pc;
+    padding:  50px 50px 10px;
     color:black;
     }
   
@@ -39,7 +42,7 @@
     bottom:0;
     width:100%;
     text-align: center;
-    color: rgb(50, 3, 71);
+    color:#551a8b;
     background-color:black;
   }
     
