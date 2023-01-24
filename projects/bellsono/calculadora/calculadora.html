@@ -82,7 +82,7 @@
       
           // mostra o resultado na tela sem casas decimais
           if(tensao_escolhida == 110){
-            document.getElementById("resultado").innerHTML = "Resistência: " + Math.round(resistencia) + " ohms" + "<br>" + "Potência: " + Math.round(watts) + " watts" + "<br>" + "Corrente: " + corrente + " amperes" + "<br>" + "(127v: " + Math.round(watts_127v) + "W, " + corrente_127v + "A)";
+            document.getElementById("resultado").innerHTML = "Resistência: " + Math.round(resistencia) + " ohms" + "<br>" + "Potência: " + Math.round(watts_127v) + " watts" + "<br>" + "Corrente: "  + corrente_127v + " amperes";
           } else {
             document.getElementById("resultado").innerHTML = "Resistência: " + Math.round(resistencia) + " ohms" + "<br>" + "Potência: " + Math.round(watts) + " watts" + "<br>" + "Corrente: " + corrente + " amperes";
 }
