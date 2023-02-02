@@ -1,77 +1,165 @@
-<!DOCTYPE html>
-<html lang="en">
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  text-decoration: none;
   
-  <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Surrealist Inner Society</title>
-    
-    <link href="style.css" rel="stylesheet" />
+}
+body{
+  background-color: aliceblue;
+}
 
-  </head>
+header{
+  font-size: large;
+  padding: 10px;
+  background-color: black;
+  flex-wrap: wrap;
+}
+
+.tittle{
+  width:100%;
+  padding:0;
+  text-align: center;
   
-  <body>
+}
 
-  <header>
-    <div class="tittle">
-      <a href=""><h2>Surrealist Inner Society</h2></a>
-    </div>
-    <div class="menus">
-      <div class="menu">
-        <a href="./projects/projects.html">Projects</a>
-        <a href="./about/about.html">About</a>
-        <a href="./donation/donation.html">Donation</a>
+.menu{
+  text-align: center;
+}
 
-      </div>
-    </div>
-  </header>
+section.banner{
+  max-width: 100%;
+  bottom: 0;
+  text-align: center;
+  color:black;
+  left: 50%;
+  top: 50%;
+}
 
-  <section class="banner">
-    <img class="sis" src="sis-gif.gif">
-  </section>
-  
-  <div class="eyes">
-    <div class="eye">
-      <button class="ball"></button>
-  </div>
+img{
+  filter: perspective(200px);
+}
+
+.sis{
+  max-width: 100%;
+  position: absolute;
+  transform:translate(-50%, -50%);
+  border: 0;  
+  left: 50%;
+  top: 55%;
+  overflow: hidden;
+}
+
+/* .eyes{
+  position: absolute;
+  top:57%;
+  transform: translateY(-50%);
+  width: 100%;
+  text-align: center;
+}
+.eye{
+  width: 210px;
+  height: 130px;
+  background: rgb(255, 255, 255);
+  display: inline-block;
+  border-radius: 30%;
+  position: relative;
+  overflow: hidden;
+  margin-top: -0.8%;
+  left: 0.23%;
+}
+
+.ball{
+  opacity: 0;
+  width: 70px;
+  height: 70px;
+  background: #979797;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  border: 15px solid #af9cc0;
+  animation: fadein 15s ease-in-out infinite;
+} */
+button{
+    cursor: pointer;    
+}
 
 
-  <footer>
-    <p>© 2022 - Surrealist Inner Society. All rights reserved.</p>
-  </footer>
 
-  <script>
-    if(window.ethereum){
-        document.querySelector('button').addEventListener('click',async ()=>{
-            try{
-            const accounts = await ethereum.request({method:'eth_requestAccounts'});
-            account = accounts[0];
-            document.querySelector('span').innerHTML=account;
-     }catch(e){}
-     })
-    }else{
-        alert("Can't log in if you don't have a Wallet!");
-    }
+footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  margin: 0;
+  opacity: 1;
+  text-align: center;
+  background-color: black;
+  color:#551a8b;
+  font-size: large;
+}
+p{
+  padding-top: 5px;
+}
 
-/*     var balls = document.getElementsByClassName("ball");
-  document.onmousemove = function(){
-    var x = event.clientX * 100 / window.innerWidth + "%";
-    var y = event.clientY * 100 / window.innerHeight + "%";
-    //event.clientX => get the horizontal coordinate of the mouse
-    //event.clientY => get the Vertical coordinate of the mouse
-    //window.innerWidth => get the browser width
-    //window.innerHeight => get the browser height
+/* @keyframes fadein {
+  0%   { opacity: 0; }
+  50%  { opacity: 0.60; }
+  100% { opacity: 0; }
+}
 
-    for(var i=0;i<2;i++){
-      balls[i].style.left = x;
-      balls[i].style.top = y;
-      balls[i].style.transform = "translate(-"+x+",-"+y+")";
-    }
+@keyframes change-color {
+  0%   { background-color: white; }
+  50%  { background-color: #d5c6e2; }
+  100% { background-color: white; }
+} */
+
+@media (max-width: 320px) {
+  footer{
+    position: absolute;
+    margin-top: 55%;
+    padding: 10px;
+    width:100%;
+    text-align: center;
+    color: rgb(50, 3, 71);
+    background-color:black;
+  }
+  p{
+    font-size: 13px;
+  }
+
+/*   .eye{
+    width: 120px;
+    height: 80px;
+    margin-top: -0.8%;
+    left: 0.23%;
   } */
+}
 
-</script>
-  
-    
-  </body>
-</html>
+@media (max-width: 425px) {
+  footer{
+    position: fixed;
+    margin-top: 78.9%;
+    width: 100%;
+    text-align: center;
+    color: rgb(50, 3, 71);
+    background-color: black;
+  }
+  p{
+    font-size: 13px;
+  }
+.sis{
+  margin-top: -5%;
+}
+/*   .eye{
+    width: 120px;
+    height: 80px;
+    margin-top: -13.5%;
+    left: 0.23%;
+  }
+ */
+
+}
