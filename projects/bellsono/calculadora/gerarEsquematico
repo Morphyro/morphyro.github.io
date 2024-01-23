@@ -1,0 +1,142 @@
+function gerarEsquematico(quantidadeCanaletas, quantidadeParciais) {
+  var esquematico = "";
+
+
+  if (quantidadeCanaletas == 20 && quantidadeParciais == 2) {
+    esquematico =
+      "<div class='linha'>.........10....................10.........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+      "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+      "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+    
+
+    } else if (quantidadeCanaletas == 10 && quantidadeParciais == 2) {
+      esquematico =
+      "<div class='linha'>..........5.....................5..........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+      "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+      "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+
+    } else if (quantidadeCanaletas == 16 && quantidadeParciais == 2) {
+      esquematico =
+      "<div class='linha'>..........8.....................8..........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+      "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+      "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+    
+
+      
+
+    } else if (quantidadeCanaletas == 28 && quantidadeParciais == 2) {
+      esquematico =
+      "<div class='linha'>.........14....................14..........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+      "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+      "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+
+
+    } else if (quantidadeCanaletas == 18 && quantidadeParciais == 3) {
+      esquematico =
+        "<div class='linha'>..........6.....................6.....................6.........</div>" +
+        "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span></div>" +
+        "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+        "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→└→→→┐</span></div>" +
+        "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+    
+    } else if (quantidadeCanaletas == 24 && quantidadeParciais == 2) {
+      esquematico =
+      "<div class='linha'>.........12....................12.........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+      "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+      "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+    
+    } else if (quantidadeCanaletas == 24 && quantidadeParciais == 3) {
+    esquematico =
+    "<div class='linha'>..........8.....................8.....................8.........</div>" +
+        "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span></div>" +
+        "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+        "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→└→→→┐</span></div>" +
+        "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+      
+      } else if (quantidadeCanaletas == 44 && quantidadeParciais == 2) {
+        esquematico =
+        "<div class='linha'>.........22....................22..........</div>" +
+        "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+        "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+        "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+        "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+
+      } else if (quantidadeCanaletas == 36 && quantidadeParciais == 2) {
+        esquematico =
+        "<div class='linha'>.........18....................18..........</div>" +
+        "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span> " +
+        "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+        "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→</span>└→→→→→┐</div>" +
+        "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+    } else if (quantidadeCanaletas == 30 && quantidadeParciais == 3) {
+      esquematico =
+        "<div class='linha'>..........10...................10....................10.........</div>" +
+        "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span></div>" +
+        "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+        "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→└→→→┐</span></div>" +
+        "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+      
+      } else if (quantidadeCanaletas == 36 && quantidadeParciais == 3) {
+        esquematico =
+          "<div class='linha'>..........12...................12....................12.........</div>" +
+          "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span></div>" +
+          "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+          "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→└→→→┐</span></div>" +
+          "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+
+      } else if (quantidadeCanaletas == 60 && quantidadeParciais == 3) {
+        esquematico =
+          "<div class='linha'>..........20...................20....................20.........</div>" +
+          "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span></div>" +
+          "<div class='linha'> |-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+          "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>→<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→└→→→┐</span></div>" +
+          "<div class='linha'>....................<span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+
+    } else if (quantidadeCanaletas == 40 && quantidadeParciais == 4) {
+    esquematico =
+      "<div class='linha'>..........10....................10...................10....................10.........</div>" +
+      "<div class='linha'><span class='componente'>┌-------------------┐</span>  <span class='componente'>┌-------------------┐</span>    <span class='componente'>┌-------------------┐</span>   <span class='componente'>┌-------------------┐</span></div>" +
+      "<div class='linha'>|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|*|-|-|-|-|-|-|-|-|-|-|</div>" +
+      "<div class='linha'><span class='componente'>.└→→→→→→→→→→→→→→→→→.༽</span>-<span class='componente'>༼.→→→→→→→→→→→→→→→→→└</span><span class='componente'>(Y)┘→→→→→→→→→→→→→→→→→→.༽</span>-<span class='componente'>༼.→→→→→→→→→→→→→→→→→└-┐</span></div>" +
+      "<div class='linha'>................... <span class='componente'>(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬(Y)▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬╠===|Cabo Digital|</span></div>";
+  } else {
+
+
+
+
+    esquematico = "Esquemático não disponível para os parâmetros fornecidos.";
+  }
+
+
+  esquematico = esquematico.replace(/▬/g, "<span class='fio-vermelho'>▬</span>");
+  esquematico = esquematico.replace(/→/g, "<span class='fio-azul'>→</span>");
+  esquematico = esquematico.replace(/\./g, "<span class='ponto-branco'>.</span>");
+  esquematico = esquematico.replace(/༽/g, "<span class='vermelho1'>༽</span>");  
+  esquematico = esquematico.replace(/༼/g, "<span class='vermelho2'>༼</span>");
+
+  
+  
+
+
+  return "<div class='esquematico-container'><div class='esquematico'>" + esquematico + "</div></div>";
+
+  
+
+  // Apenas atualize a visibilidade se for para um PDF
+  var isPDF = window.location.href.indexOf("gerarPDF") > -1;
+  document.getElementById("esquematico").style.display = isPDF ? "block" : "none";
+  
+  document.getElementById("esquematico").innerHTML = esquematico;
+
+  return "<div class='esquematico-container'><div class='esquematico'>" + esquematico + "</div></div>";
+}
