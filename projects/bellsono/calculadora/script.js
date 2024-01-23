@@ -57,7 +57,7 @@
     html2pdf(esquematicoHTML, {
       margin: 10,
       filename: 'esquematico.pdf',
-      jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+      jsPDF: { unit: 'mm', format: 'a4', orientation: 'landscape' }
     });
   }
  
