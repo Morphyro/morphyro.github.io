@@ -13,18 +13,15 @@
   }
   
   .calculadora {
-    margin: 0;
-    width: 60%;
-    height: 760px;
-    background-color: #c7f5ff;
-    text-align: center;
-    border: 1px solid black;
-    background-color: #c7f5ff;
-    border-radius: 10px;
-    text-align: center;
-    border: 1px solid black;
-    display: block;
-  }
+  margin: 0;
+  width: 60%;
+  height: 100vh; /* Altura ajustada para cobrir toda a altura da viewport */
+  background-color: #c7f5ff;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: block;
+}
   
   .linha {
     font-family: monospace; /* Para manter a formatação com espaçament uniforme */
