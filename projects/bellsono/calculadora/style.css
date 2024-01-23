@@ -102,8 +102,8 @@
   /* Estilos CSS para o esquemático dentro do contêiner */
   .esquematico {
     font-family: monospace; /* Usando uma fonte de espaçamento fixo para manter a formatação */
-    font-size: 16px; /* Tamanho da fonte */
-    line-height: 1.2; /* Altura da linha */
+    font-size: 18px; /* Tamanho da fonte */
+    line-height: 1.5; /* Altura da linha */
   }
 
   .fio-vermelho {
