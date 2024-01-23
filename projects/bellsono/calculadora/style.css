@@ -1,90 +1,135 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-
-body {
-    background-color:aliceblue;
+  }
+  
+  body {
+    background-color: aliceblue;
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-
-
-.calculadora {
+  }
+  
+  .calculadora {
     margin: 0;
     width: 60%;
-    height: 98%;
-    background-color:#c7f5ff;
+    height: 100%;
+    background-color: #c7f5ff;
     text-align: center;
     border: 1px solid black;
-    background-color:#c7f5ff;
+    background-color: #c7f5ff;
     border-radius: 10px;
     text-align: center;
     border: 1px solid black;
     display: block;
+  }
+  
+  .linha {
+    font-family: monospace; /* Para manter a formatação com espaçamento uniforme */
+  }
+  
+  .componente {
+    font-weight: bold;
+    color: blue; /* Adicione estilos adicionais conforme necessário */
+  }
+  
 
-}
-
-
-a {
+  a {
     border-radius: 8px;
     text-align: center;
     display: block;
     padding: 20px 10px;
-    background-color: #47BDD7;
+    background-color: #47bdd7;
     color: rgb(0, 0, 0);
     border: 3px solid black;
     text-decoration: none;
-    font-size:x-large;
-}
-
-h1 {
+    font-size: x-large;
+  }
+  
+  h1 {
     padding-top: 10px;
     text-align: center;
     border-radius: 4px;
-
-}
-
-p{
+  }
+  
+  p {
     padding-bottom: 10;
     font-size: small;
-}
-
-form {
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-label {
-    margin-top: -5px;
+  }
+  
+  label {
     font-size: large;
     margin-bottom: 3px;
-}
-
-
-input[type="number"] {
-    height: 35;
+  }
+  .resultado {
+    text-align: center;
+    font-weight: bold;
+    font-size: medium;
+    margin-top: 10px;
+  }
+  input[type="number"] {
+    height: 35px;
     border-radius: 10px;
     border: 2px solid rgb(154, 198, 255);
     text-align: center;
-}
-
-
-select {
+  }
+  
+  select {
     font-size: 18px;
     text-align: center;
     width: 110px;
     padding: 5px;
     border-radius: 4px;
     border: 1px solid rgb(0, 0, 0);
-}
+  }
 
-button {
+
+  .esquematico-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Define a altura para 100% da altura da visualização */
+  }
+  
+  /* Estilos CSS para o esquemático dentro do contêiner */
+  .esquematico {
+    font-family: monospace; /* Usando uma fonte de espaçamento fixo para manter a formatação */
+    font-size: 12px; /* Tamanho da fonte */
+    line-height: 1.2; /* Altura da linha */
+  }
+
+  .fio-vermelho {
+    color: red; /* Cor para o caractere '-' */
+  }
+  
+  .fio-azul {
+    color: blue; /* Cor para o caractere '_' */
+  }
+
+  .ponto-branco {
+    color: white; /* Cor para o caractere '.' (ponto) */
+  }
+
+  .vermelho1 {
+    color: rgb(255, 0, 0); /* Cor para o caractere '.' (ponto) */
+  }
+
+  .vermelho2 {
+    color: rgb(255, 0, 0); /* Cor para o caractere '.' (ponto) */
+  }
+
+
+ 
+
+  button {
     height: 35px;
     width: 130;
     background-color: #e7640c;
@@ -93,84 +138,85 @@ button {
     border-radius: 4px;
     cursor: pointer;
     font-size: large;
-}
-
-
-button:hover {
+    margin-bottom: 10px; /* Adicionado para criar espaço entre os botões */
+  }
+  
+  button:hover {
     background-color: #ce814d;
-}
-
-a:hover{
+  }
+  
+  a:hover {
     background-color: #75d5eb;
-}
-
-#resultado {
+  }
+  
+  #resultado {
     text-align: center;
     font-weight: bold;
-    font-size:medium;
-    margin-top:10px;
-}
-
-@media screen and (max-width:320px) {
-    #resultado{
-        font-size: small;
+    font-size: medium;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width:320px) {
+    #resultado {
+      font-size: small;
     }
-
-    a{
-        font-size:large;
+  
+    a {
+      font-size: large;
     }
-    
+  
     label {
-        margin-top: -5px;
-        font-size: 20px;
-        margin-bottom: 3px;
+      margin-top: -5px;
+      font-size: 20px;
+      margin-bottom: 3px;
     }
-
-    p{
-        margin-top: 2px;
+  
+    p {
+      margin-top: 2px;
     }
-
+  
     input[type="number"] {
-        margin: 0;
+      margin: 0;
     }
-
-    button{
-        margin-bottom: -15px;
+  
+    button {
+      margin-bottom: -15px;
     }
-}
-
-
-@media screen and (max-width:768px) {
-    .calculadora{
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        margin: auto ;
-        padding: auto;  
+  }
+  
+  @media screen and (max-width:768px) {
+    .calculadora {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      padding: auto;
     }
-    
-    body{
-            margin: 5;
-            padding: 0;
-            height: auto;
-        }
-
-        label {
-            margin-top: -5px;
-            font-size: 20px;
-            margin-bottom: 3px;
-        }
-
-        h1{
-            font-size: x-large;     
-       }
-
-        #resultado{
-            margin-top:30px;
-            font-size: large;
-        }
-
-        input[type="number"] {
-            margin: 0;
-        }
-}
+  
+    body {
+      margin: 5;
+      padding: 0;
+      height: auto;
+    }
+  
+    label {
+      margin-top: -5px;
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+  
+    h1 {
+      font-size: x-large;
+    }
+  
+    #resultado {
+      margin-top: 30px;
+      font-size: large;
+    }
+  
+    input[type="number"] {
+      margin: 0;
+    }
+  }
+  
