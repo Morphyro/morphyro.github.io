@@ -102,7 +102,7 @@
   /* Estilos CSS para o esquemático dentro do contêiner */
   .esquematico {
     font-family: monospace; /* Usando uma fonte de espaçamento fixo para manter a formatação */
-    font-size: 12px; /* Tamanho da fonte */
+    font-size: 16px; /* Tamanho da fonte */
     line-height: 1.2; /* Altura da linha */
   }
 
