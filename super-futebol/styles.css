@@ -103,7 +103,16 @@ body {
     font-size: 2rem; /* Ajuste do tamanho da fonte, se necessário */
   }
 
-  #footer{
-    margin-top: 95%;
-    font-size: large;
+  #footer {
+    margin-top: 85%;
+    font-size:medium;
+  }
+
+  #start-screen h1 {
+    font-size: 3rem; /* Tamanho maior para o título na página inicial */
+  }
+  
+  #start-screen .footer p {
+    margin-top: 30%;
+    font-size: 0.8rem; /* Tamanho personalizado para o p do footer */
   }
