@@ -1,6 +1,6 @@
 body {
-    font-family: "nunito";
     text-align: center;
+    font-family: "Patrick Hand", cursive;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
   }
-  
+
+
   #start-screen{
     margin-top: 200px;
   }
@@ -100,4 +101,9 @@ body {
   
   #end-screen h1 {
     font-size: 2rem; /* Ajuste do tamanho da fonte, se necessário */
+  }
+
+  #footer{
+    margin-top: 95%;
+    font-size: large;
   }
