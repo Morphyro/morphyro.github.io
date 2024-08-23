@@ -24,8 +24,8 @@ const quizData = [
     question: "Quantas Copas do Mundo a Seleção Brasileira de futebol já ganhou até 2022?",
     answers: [
       { text: "3", correct: false },
-      { text: "4", correct: false },
       { text: "5", correct: true },
+      { text: "4", correct: false },
       { text: "6", correct: false }
     ]
   },
