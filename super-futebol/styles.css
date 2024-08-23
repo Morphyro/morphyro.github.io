@@ -52,7 +52,7 @@ body {
   }
   
   .correct {
-    background-color: green !important;
+    background-color: rgb(0, 230, 0) !important;
   }
   
   .wrong {
