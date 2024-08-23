@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=400, height=710">
+  <title>Gerador de Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
+</head>
+<body>
+  <div id="quiz-container">
+    <div id="start-screen">
+      <h1>Super Quiz</h1>
+      <p>Futebol</p>
+      <button id="start-btn">Começar</button>
+    </div>
+
+    <div id="quiz-screen" style="display: none;">
+      <h1 id="question-number"></h1>
+      <p id="question-text"></p>
+      <div id="answer-buttons" class="btn-grid"></div>
+    </div>
+
+    <div id="end-screen" style="display: none;">
+      <h1>Você errou, tente novamente.</h1>
+      <button id="restart-btn">Reiniciar</button>
+    </div>
+
+    <div id="victory-screen" style="display: none;">
+      <h1>Parabéns, você venceu!</h1>
+      <button id="victory-btn">Menu Inicial</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
